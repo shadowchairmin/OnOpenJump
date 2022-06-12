@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ぷろぐらみんぐてすと" />
+  <meta name="twitter:description" content="アクセスすると自動で指定のurlにとばせるページ このサンプルではgoogleのHPへとぶ" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/shadowchairmin/PubContents/main/Icon6.png" />
+  <title>R(yun)edirecting</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/shadowchairmin/PubContents/main/Icon6.png">
+  <script type="application/javascript">
+    const DestinationURL = "https://google.com" //ここに転送先URLを入力
+    const Comment = null;
+    document.write("<p>リダイレクトしています：<a href="+DestinationURL+">"+DestinationURL+"</a></p>");
+    if (!(Comment==null)) {document.write("<p>"+Comment+"</p>");}
+    setTimeout(function(){
+    document.location = DestinationURL;
+    },1000);
+  </script>
+ </head>
+ <body onload="draw();">
+   <canvas id="canvas" width="150" height="150"></canvas>
+ </body>
+</html>
